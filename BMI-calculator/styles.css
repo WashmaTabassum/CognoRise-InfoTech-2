@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('assets/bg2.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: SemiBold 600;
+    font-style: normal;
+    color: rgb(77, 81, 81);
+}
+label{
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: SemiBold 600;
+    font-style: normal;
+    color: rgb(77, 81, 81);
+}
+.container {
+    background: rgba(255, 255, 255, 0.4); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    backdrop-filter: blur(20px);
+    
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(250, 125, 165);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 150px;
+}
+
+button:hover {
+    background-color: rgb(146, 190, 217);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: SemiBold 600;
+    font-style: normal;
+    color: rgb(77, 81, 81);
+    
+}
+
+.result-button{
+    margin-top: 10px;
+}
+.hidden {
+    display: none;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+
+    body{
+        background-image: url('assets/bg_mob2.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .container_mob {
+        width: 80%;
+        padding: 15px;
+        background: transparent;
+    }
+    .container_result {
+        width: 70%;
+        padding: 15px;
+        background: transparent;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input {
+        padding: 8px;
+    }
+    h1{
+        color: rgb(238 239 235);
+    }
+    label{
+        color: rgb(255 255 254);
+    }
+    button{
+        background-color: rgb(221, 90, 83);
+    }
+    #result {
+        font-size: 16px;
+        color: rgba(255, 255, 255);
+    }
+}
+/* Medium devices (tablets, 600px and up) */
+@media (min-width: 600px) and (max-width: 991px) {
+    body{
+        background-image: url('assets/bg_mob.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .container {
+        width: 80%;
+        padding: 20px;
+        background: transparent;
+    }
+
+    button {
+        width: 50%;
+    }
+
+    input {
+        padding: 10px;
+    }
+    h1{
+        color: rgb(238 239 235);
+    }
+    label{
+        color: rgb(255 255 254);
+    }
+    button{
+        background-color: rgb(221, 90, 83);
+    }
+    #result {
+        font-size: 20px;
+        color: rgba(255, 255, 255);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 40%;
+    }
+
+    button {
+        width: 40%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 30%;
+    }
+
+    button {
+        width: 30%;
+    }
+}

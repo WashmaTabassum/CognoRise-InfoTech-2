@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="container container_mob" id="bmiFormContainer">
+        <h1>BMI Calculator</h1>
+        <form id="bmiForm" onsubmit="return false;">
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+
+            <label for="feet">Height:</label>
+            <input type="number" id="feet" placeholder="Feet" required>
+            <input type="number" id="inches" placeholder="Inches" required>
+
+            <div class="button-container">
+                <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+            </div>
+            <div id="error-message" class="hidden"></div>
+        </form>
+    </div>
+
+    <div class="container container_result hidden" id="resultContainer">
+        <h1>BMI Result</h1>
+        <div id="result"></div>
+        <button class="result-button" onclick="goBack()">Go Back</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
